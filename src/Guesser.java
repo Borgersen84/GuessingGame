@@ -25,6 +25,11 @@ public class Guesser {
         this.high = high;
     }
 
+    @Override
+    public String toString() {
+        return "Low: " + this.low + "\n" + "High: " + this.high;
+    }
+
     /*
      * Task 2. Complete the start() method, so that
      * in the method body, you call first the
