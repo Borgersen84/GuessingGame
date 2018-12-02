@@ -61,7 +61,7 @@ public class Guesser {
      * the player.
      */
     private String getReply(){
-        String reply;
+        String reply = null;
         Scanner sc = new Scanner(System.in);
         reply = sc.nextLine();
         while(!reply.equals("T") && !reply.equals("F")){
