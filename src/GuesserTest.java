@@ -1,18 +1,14 @@
 public class GuesserTest {
 
     public static void main(String[] args) {
-        String s = null;
 
-        if("Barcelona".equals(s)){
-            System.out.println("Ay, caramba");
-        }
-
-        try{
-            if (s.equals("Barcelona")){
-                System.out.println("Ay, caramba");
-            }
-        }catch (NullPointerException npe){
-            System.out.println("This did not work");
+        //Testing the constructor for exception
+        try {
+            Guesser guesser = new Guesser(1000, 10);
+            System.err.println("Test failed. No exception thrown");
+        }catch (IllegalArgumentException iae){
+            System.err.println(iae);
+            System.out.println("Test lyckades!");
         }
 
     }
